@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/busquedaFrament">
+
+    <fragment
+        android:id="@+id/busquedaFrament"
+        android:name="com.example.comidasactivity.view.BusquedaFrament"
+        android:label="BusquedaFrament" >
+        <action
+            android:id="@+id/action_busquedaFrament_to_comidasRemotasFragment"
+            app:destination="@id/comidasRemotasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comidasRemotasFragment"
+        android:name="com.example.comidasactivity.view.ComidasRemotasFragment"
+        android:label="ComidasRemotasFragment" >
+        <action
+            android:id="@+id/action_comidasRemotasFragment_to_detalleComidaFragment"
+            app:destination="@id/detalleComidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleComidaFragment"
+        android:name="com.example.comidasactivity.view.DetalleComidaFragment"
+        android:label="DetalleComidaFragment" />
+</navigation>
